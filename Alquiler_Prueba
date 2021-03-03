@@ -1,0 +1,10 @@
+desde openpyxl load_workbook de importación 
+
+RutaDeLaBase = "Alquileres.xlsx"
+HojaDeLaBase = "Datos"
+
+libro = load_workbook(RutaDeLaBase, read_only=True)
+hoja = libro de trabajo[HojaDeLaBase]
+
+para Dato en hoja. iter_rows():
+    impresión(Dato[0]. valor", " |",Dato[1]. valor", " |",Dato[2]. valor", " |",Dato[3]. valor, " | ",Dato[4]. valor, " | ",Dato[5]. valor)
